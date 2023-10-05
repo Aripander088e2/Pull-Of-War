@@ -35,11 +35,11 @@ for(var level = 0; level < 50; level++) {
 function createMap(maps, level, lanes, type) {
 	//var extraDifficulty = (((level+1)/2)|0)
 	var theMap = [];
-	theMap[0] = Math.floor(Math.pow(1.6, level+1)); 					//Base Gold
-	theMap[1] = Math.floor(15*Math.pow(1.05, level)*(level*level*.5+1)+level*10);                               //Territory Gain (with Bonus)
+	theMap[0] = Math.floor(Math.pow(6.6, level+11)); 					//Base Gold
+	theMap[1] = Math.floor(15*Math.pow(1.25, level)*(level*level*.5+1)+level*16);                               //Territory Gain (with Bonus)
 	theMap[2] = Math.floor((150*Math.pow(1.06, level))*(level*2+1));                                 //Enemy Fence Health
 	theMap[3] = Math.floor((1800*Math.pow(1.5, level)*(level+1)));                                 //Enemy Wall Health
-	theMap[4] = (lanes===2&&type!=='start'?10:15);                                 //Spawn Timer
+	theMap[4] = (lanes===2&&type!=='start'?8:18);                                 //Spawn Timer
 	theMap[5] = 0;                             	  //Tower Number TODO
 	theMap[6] = 0;                              	  //Tower Damage TODO
 	theMap[7] =  60*(10+level*2);                              	  //Cooldown on Bonus
