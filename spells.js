@@ -1,6 +1,6 @@
 function updateManaGain() {
 	if(curMana === maxMana) {
-		maxMana += manaGain/480; 
+		maxMana += manaGain/48; 
 		curMana = maxMana
 	}
 	if(curMana < maxMana) {
@@ -87,12 +87,12 @@ function levelUp() {
 	if(spellExp >= expNeededToLevel) {
 		spellLevel++
 		spellExp -= expNeededToLevel
-		expNeededToLevel = expNeededToLevel*1.2*Math.pow(1.02, spellLevel)
-		maxMana+=10
+		expNeededToLevel = expNeededToLevel*1.2*Math.pow(1.03, spellLevel)
+		maxMana+=60
 		curMana+=10
-		manaGain += .002
+		manaGain += .02
 		for(q = 0; q < spellCosts.length; q++) {
-			spellCosts[q] *= .99;
+			spellCosts[q] *= .97;
 		}
   }
 }
