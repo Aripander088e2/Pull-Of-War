@@ -519,8 +519,8 @@ function tickConstruction() {
 function upgradeConstructionRate() {
 	if((territory - totalUsedTerritory) > (upgradeConstructionRateCost) && (territory-upgradeConstructionRateCost > 10)) {
 		territory -= upgradeConstructionRateCost
-		upgradeConstructionRateCost += 50
-		constructionRate += .25
+		upgradeConstructionRateCost += 5
+		constructionRate += 1.25
 		document.getElementById('costructionRateCost').innerHTML=upgradeConstructionRateCost
 	}
 	updateTerritoryVisual()
