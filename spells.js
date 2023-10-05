@@ -87,7 +87,7 @@ function levelUp() {
 	if(spellExp >= expNeededToLevel) {
 		spellLevel++
 		spellExp -= expNeededToLevel
-		expNeededToLevel = expNeededToLevel*1.2*Math.pow(1.03, spellLevel)
+		expNeededToLevel = expNeededToLevel*1.05*Math.pow(1.03, spellLevel)
 		maxMana+=60
 		curMana+=10
 		manaGain += .02
