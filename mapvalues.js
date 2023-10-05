@@ -36,7 +36,7 @@ function createMap(maps, level, lanes, type) {
 	//var extraDifficulty = (((level+1)/2)|0)
 	var theMap = [];
 	theMap[0] = Math.floor(Math.pow(2.6, level+3)); 					//Base Gold
-	theMap[1] = Math.floor(15*Math.pow(1.25, level)*(level*level*.5+1)+level*16);                               //Territory Gain (with Bonus)
+	theMap[1] = Math.floor(15*Math.pow(1.65, level)*(level*level*.5+1)+level*16);                               //Territory Gain (with Bonus)
 	theMap[2] = Math.floor((150*Math.pow(1.06, level))*(level*2+1));                                 //Enemy Fence Health
 	theMap[3] = Math.floor((1800*Math.pow(1.5, level)*(level+1)));                                 //Enemy Wall Health
 	theMap[4] = (lanes===2&&type!=='start'?8:18);                                 //Spawn Timer
