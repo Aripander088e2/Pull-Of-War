@@ -498,7 +498,7 @@ function addUnit(type, line, direction, unitCount) {
 
 function updateDeadUnitBonus() {
 	for(m = 0; m < totalDead.length; m++) {
-		deadUnitBonus[m] = 1//Math.pow(totalDead[m], .65)/1000+1
+		deadUnitBonus[m] = Math.pow(totalDead[m], .65)/1000+1
 	}
 	if(curUnitScreen == "-1") return
 	document.getElementById("deadUnitBonus"+curUnitScreen).innerHTML = round3(deadUnitBonus[curUnitScreen])
