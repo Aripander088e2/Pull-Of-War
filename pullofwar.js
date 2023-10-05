@@ -498,7 +498,7 @@ function addUnit(type, line, direction, unitCount) {
 
 function updateDeadUnitBonus() {
 	for(m = 0; m < totalDead.length; m++) {
-		deadUnitBonus[m] = Math.pow(totalDead[m], .85)/900+1
+		deadUnitBonus[m] = Math.pow(totalDead[m], .88)/700+1
 	}
 	if(curUnitScreen == "-1") return
 	document.getElementById("deadUnitBonus"+curUnitScreen).innerHTML = round3(deadUnitBonus[curUnitScreen])
@@ -520,7 +520,7 @@ function upgradeConstructionRate() {
 	if((territory - totalUsedTerritory) > (upgradeConstructionRateCost) && (territory-upgradeConstructionRateCost > 10)) {
 		territory -= upgradeConstructionRateCost
 		upgradeConstructionRateCost += 5
-		constructionRate += 1.25
+		constructionRate += 4.25
 		document.getElementById('costructionRateCost').innerHTML=upgradeConstructionRateCost
 	}
 	updateTerritoryVisual()
