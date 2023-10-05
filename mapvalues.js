@@ -39,7 +39,7 @@ function createMap(maps, level, lanes, type) {
 	theMap[1] = Math.floor(15*Math.pow(1.65, level)*(level*level*.5+1)+level*16);                               //Territory Gain (with Bonus)
 	theMap[2] = Math.floor((150*Math.pow(1.06, level))*(level*2+1));                                 //Enemy Fence Health
 	theMap[3] = Math.floor((1800*Math.pow(1.5, level)*(level+1)));                                 //Enemy Wall Health
-	theMap[4] = (lanes===2&&type!=='start'?8:18);                                 //Spawn Timer
+	theMap[4] = (lanes===2&&type!=='start'?10:12);                                 //Spawn Timer
 	theMap[5] = 0;                             	  //Tower Number TODO
 	theMap[6] = 0;                              	  //Tower Damage TODO
 	theMap[7] =  2*(10+level*2);                              	  //Cooldown on Bonus
