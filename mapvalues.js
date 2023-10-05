@@ -42,7 +42,7 @@ function createMap(maps, level, lanes, type) {
 	theMap[4] = (lanes===2&&type!=='start'?10:12);                                 //Spawn Timer
 	theMap[5] = 0;                             	  //Tower Number TODO
 	theMap[6] = 0;                              	  //Tower Damage TODO
-	theMap[7] =  2*(10+level*2);                              	  //Cooldown on Bonus
+	theMap[7] =  2*(1+level*1.2);                              	  //Cooldown on Bonus
 	theMap[8] = lanes;                              	  //Lane Count
 
 	if(type === 'start') {
